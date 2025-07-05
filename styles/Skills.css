@@ -1,0 +1,66 @@
+/* src/components/Skills.css */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skills-category {
+  margin-bottom: 2rem;
+}
+
+.skills-category-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--light-accent);
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.dark .skills-category-title {
+  color: var(--dark-accent);
+}
+
+.skills-category-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--light-accent);
+}
+
+.dark .skills-category-title::after {
+  background-color: var(--dark-accent);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-item {
+  background-color: var(--light-card);
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  transition: var(--transition);
+  box-shadow: 0 3px 10px var(--light-shadow);
+}
+
+.dark .skill-item {
+  background-color: var(--dark-card);
+  box-shadow: 0 3px 10px var(--dark-shadow);
+}
+
+.skill-item:hover {
+  transform: translateY(-3px);
+  background-color: var(--light-accent);
+  color: white;
+}
+
+.dark .skill-item:hover {
+  background-color: var(--dark-accent);
+}

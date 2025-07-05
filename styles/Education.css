@@ -1,0 +1,58 @@
+/* src/components/Education.css */
+.education-card {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education-header {
+  margin-bottom: 1.5rem;
+}
+
+.institution {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.degree {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--light-accent);
+  font-weight: 600;
+}
+
+.dark .degree {
+  color: var(--dark-accent);
+}
+
+.location {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+.dark .location {
+  color: #a0a0a0;
+}
+
+.education-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.period {
+  font-weight: 600;
+  min-width: 180px;
+}
+
+.description {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .education-details {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

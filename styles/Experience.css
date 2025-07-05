@@ -1,0 +1,104 @@
+/* src/components/Experience.css */
+.timeline {
+  position: relative;
+  padding-left: 3rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  height: 100%;
+  width: 4px;
+  background-color: var(--light-accent);
+  border-radius: 2px;
+}
+
+.dark .timeline::before {
+  background-color: var(--dark-accent);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  left: -3.3rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--light-accent);
+  border: 4px solid var(--light-bg);
+  z-index: 1;
+}
+
+.dark .timeline-item::before {
+  background-color: var(--dark-accent);
+  border-color: var(--dark-bg);
+}
+
+.timeline-content {
+  position: relative;
+}
+
+.job-title {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-meta {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #6c757d;
+}
+
+.dark .job-meta {
+  color: #a0a0a0;
+}
+
+.company {
+  font-weight: 600;
+}
+
+.achievements {
+  padding-left: 1.5rem;
+}
+
+.achievement-item {
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.achievement-bullet {
+  position: absolute;
+  left: -1.5rem;
+  color: var(--light-accent);
+}
+
+.dark .achievement-bullet {
+  color: var(--dark-accent);
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 2rem;
+  }
+
+  .timeline::before {
+    left: 1rem;
+  }
+
+  .timeline-item::before {
+    left: -2.3rem;
+  }
+}
