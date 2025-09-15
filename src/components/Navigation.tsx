@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+import lightThemeLogo from "@/assets/lightThemeLogo.png";
+import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -11,37 +12,41 @@ const Navigation = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
       setIsMobileMenuOpen(false);
     }
   };
 
   const navItems = [
-    { label: 'About', id: 'about' },
-    { label: 'Experience', id: 'experience' },
-    { label: 'Projects', id: 'projects' },
-    { label: 'Skills', id: 'skills' },
-    { label: 'Contact', id: 'contact' },
+    { label: "About", id: "about" },
+    { label: "Experience", id: "experience" },
+    { label: "Projects", id: "projects" },
+    { label: "Skills", id: "skills" },
+    { label: "Contact", id: "contact" },
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
-      isScrolled ? 'bg-background/80 backdrop-blur-md shadow-card' : 'bg-transparent'
-    }`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
+        isScrolled
+          ? "bg-background/80 backdrop-blur-md shadow-card"
+          : "bg-transparent"
+      }`}
+    >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <button
-            onClick={() => scrollToSection('hero')}
+            onClick={() => scrollToSection("hero")}
             className="text-xl font-display font-bold text-gradient hover:scale-105 transition-smooth"
           >
-            Vishwajith H H
+            <img src={lightThemeLogo} width="60" height="60" />
           </button>
 
           {/* Desktop Navigation */}
@@ -55,10 +60,10 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <Button 
-              variant="default" 
+            <Button
+              variant="default"
               size="sm"
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection("contact")}
               className="hero-gradient text-primary-foreground hover:scale-105 transition-smooth"
             >
               Let's Connect
@@ -89,10 +94,10 @@ const Navigation = () => {
                   {item.label}
                 </button>
               ))}
-              <Button 
-                variant="default" 
+              <Button
+                variant="default"
                 size="sm"
-                onClick={() => scrollToSection('contact')}
+                onClick={() => scrollToSection("contact")}
                 className="hero-gradient text-primary-foreground w-fit"
               >
                 Let's Connect
