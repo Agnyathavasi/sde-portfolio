@@ -1,11 +1,11 @@
+// vite.config.js
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => ({
-  base: command === "build" ? "/sde-portfolio/" : "/", // 👈 only add base in build
+  base: command === "build" ? "/sde-portfolio/" : "/", // 👈 repo name
 
   server: {
     host: "::",
