@@ -9,7 +9,7 @@ const ProjectsSection = () => {
       title: "AI-Powered LeetCode Helper Extension",
       description:
         "Browser extension that assists in solving LeetCode problems using AI. Offers structured insights, step-by-step approach, and final solution using OpenRouter API and LLMs.",
-      image: "/images/leetcodeSolver.png",
+      image: "sde-portfolio/images/leetcodeSolver.png",
       technologies: [
         "JavaScript",
         "Browser Extension",
@@ -32,7 +32,7 @@ const ProjectsSection = () => {
       title: "Dark Mode Toggle Chrome Extension",
       description:
         "Extension that converts any website into dark mode by parsing and applying theme-friendly CSS dynamically. Includes an intuitive toggle UI to switch themes instantly.",
-      image: "/images/themeToggle.png",
+      image: "sde-portfolio/images/themeToggle.png",
       technologies: [
         "JavaScript",
         "CSS",
@@ -54,7 +54,7 @@ const ProjectsSection = () => {
       title: "Reusable Frontend Component Library",
       description:
         "Built a comprehensive set of modular and reusable components using JavaScript and React. Includes Calendar, Copilot-textbox, File explorer, and Pagination components.",
-      image: "/images/uicomponent.png",
+      image: "sde-portfolio/images/uicomponent.png",
       technologies: ["React", "JavaScript", "Component Library", "Storybook"],
       features: [
         "Calendar with localStorage integration",
@@ -69,7 +69,7 @@ const ProjectsSection = () => {
       title: "Movie Recommender System",
       description:
         "Intelligent movie recommendation system that suggests movies based on user-inputted titles using similarity-based filtering algorithms.",
-      image: "/images/movie-recommend.png",
+      image: "sde-portfolio/images/movie-recommend.png",
       technologies: ["OpenAPI", "React", "IMDB"],
       features: [
         "Content-based filtering",
@@ -85,7 +85,7 @@ const ProjectsSection = () => {
       title: "UI Clone Collection (React)",
       description:
         "Created pixel-perfect frontend clones of popular platforms including YouTube, WhatsApp, and Windows 11 using React and modern CSS techniques.",
-      image: "/images/uiclone.png",
+      image: "sde-portfolio/images/uiclone.png",
       technologies: ["React", "CSS3", "Responsive Design", "UI/UX"],
       features: [
         "Pixel-perfect YouTube clone",
