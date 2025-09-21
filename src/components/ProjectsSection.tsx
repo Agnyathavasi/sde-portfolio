@@ -2,6 +2,11 @@ import { Github, Play } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import leetcodeSolver from "@/assets/leetcodeSolver.png";
+import movieRecommend from "@/assets/movie-recommend.png";
+import themeToggle from "@/assets/themeToggle.png";
+import uiclone from "@/assets/uiclone.png";
+import uicomponent from "@/assets/uicomponent.png";
 
 const ProjectsSection = () => {
   const projects = [
@@ -9,7 +14,7 @@ const ProjectsSection = () => {
       title: "AI-Powered LeetCode Helper Extension",
       description:
         "Browser extension that assists in solving LeetCode problems using AI. Offers structured insights, step-by-step approach, and final solution using OpenRouter API and LLMs.",
-      image: "sde-portfolio/images/leetcodeSolver.png",
+      image: leetcodeSolver,
       technologies: [
         "JavaScript",
         "Browser Extension",
@@ -32,7 +37,7 @@ const ProjectsSection = () => {
       title: "Dark Mode Toggle Chrome Extension",
       description:
         "Extension that converts any website into dark mode by parsing and applying theme-friendly CSS dynamically. Includes an intuitive toggle UI to switch themes instantly.",
-      image: "sde-portfolio/images/themeToggle.png",
+      image: themeToggle,
       technologies: [
         "JavaScript",
         "CSS",
@@ -54,7 +59,7 @@ const ProjectsSection = () => {
       title: "Reusable Frontend Component Library",
       description:
         "Built a comprehensive set of modular and reusable components using JavaScript and React. Includes Calendar, Copilot-textbox, File explorer, and Pagination components.",
-      image: "sde-portfolio/images/uicomponent.png",
+      image: uicomponent,
       technologies: ["React", "JavaScript", "Component Library", "Storybook"],
       features: [
         "Calendar with localStorage integration",
@@ -69,7 +74,7 @@ const ProjectsSection = () => {
       title: "Movie Recommender System",
       description:
         "Intelligent movie recommendation system that suggests movies based on user-inputted titles using similarity-based filtering algorithms.",
-      image: "sde-portfolio/images/movie-recommend.png",
+      image: movieRecommend,
       technologies: ["OpenAPI", "React", "IMDB"],
       features: [
         "Content-based filtering",
@@ -85,7 +90,7 @@ const ProjectsSection = () => {
       title: "UI Clone Collection (React)",
       description:
         "Created pixel-perfect frontend clones of popular platforms including YouTube, WhatsApp, and Windows 11 using React and modern CSS techniques.",
-      image: "sde-portfolio/images/uiclone.png",
+      image: uiclone,
       technologies: ["React", "CSS3", "Responsive Design", "UI/UX"],
       features: [
         "Pixel-perfect YouTube clone",
